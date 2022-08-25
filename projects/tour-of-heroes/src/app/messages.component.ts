@@ -1,9 +1,12 @@
+import { NgForOf, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 import { MessageService } from './message.service';
 
 @Component({
+  imports: [NgIf, NgForOf],
   selector: 'toh-messages',
+  standalone: true,
   styles: [
     `
       h2 {
