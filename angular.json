@@ -52,9 +52,7 @@
               "projects/application/src/favicon.ico",
               "projects/application/src/assets"
             ],
-            "styles": [
-              "projects/application/src/styles.css"
-            ],
+            "styles": ["projects/application/src/styles.css"],
             "scripts": []
           },
           "configurations": {

@@ -1,10 +1,10 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
-import { ChildComponent } from "./child.component";
+import { ChildComponent } from './child.component';
 
 @Component({
   imports: [ChildComponent],
-  selector: "app-parent",
+  selector: 'app-parent',
   standalone: true,
   template: `
     <p>ParentComponent</p>
