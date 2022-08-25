@@ -1,12 +1,15 @@
-import { Location } from '@angular/common';
+import { Location, NgIf, UpperCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
+  imports: [FormsModule, NgIf, UpperCasePipe],
   selector: 'toh-hero-detail',
+  standalone: true,
   styles: [
     `
       label {

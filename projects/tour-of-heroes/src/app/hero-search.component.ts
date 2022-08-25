@@ -1,4 +1,6 @@
+import { AsyncPipe, NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLinkWithHref } from '@angular/router';
 
 import { Observable, Subject } from 'rxjs';
 
@@ -8,7 +10,9 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
+  imports: [AsyncPipe, NgForOf, RouterLinkWithHref],
   selector: 'toh-hero-search',
+  standalone: true,
   styles: [
     `
       label {

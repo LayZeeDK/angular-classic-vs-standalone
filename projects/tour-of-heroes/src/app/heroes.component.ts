@@ -1,10 +1,14 @@
+import { NgForOf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterLinkWithHref } from '@angular/router';
 
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
+  imports: [RouterLinkWithHref, NgForOf],
   selector: 'toh-heroes',
+  standalone: true,
   styles: [
     `
       .heroes {

@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
+
+import { MessagesComponent } from './messages.component';
 
 @Component({
+  imports: [MessagesComponent, RouterOutlet, RouterLinkWithHref],
   selector: 'toh-app',
+  standalone: true,
   styles: [
     `
       h1 {

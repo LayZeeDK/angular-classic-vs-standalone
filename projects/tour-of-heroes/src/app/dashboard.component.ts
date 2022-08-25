@@ -1,10 +1,15 @@
+import { NgForOf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { HeroSearchComponent } from './hero-search.component';
 
+import { RouterLinkWithHref } from '@angular/router';
 import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
+  imports: [NgForOf, RouterLinkWithHref, HeroSearchComponent],
   selector: 'toh-dashboard',
+  standalone: true,
   styles: [
     `
       h2 {
